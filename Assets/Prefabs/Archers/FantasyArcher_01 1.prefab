@@ -70,9 +70,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f4b2be5398a1fd45878387d67306049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpeed: 150
-  projectileHeightFrom: 150
-  projectileHeightTo: 300
+  projectileSpeed: 300
+  projectileHeightFrom: 200
+  projectileHeightTo: 400
   projectile: {fileID: 1162721149016002, guid: ad526310a2461714b889a14611c847d0, type: 2}
 --- !u!212 &212983891008038884
 SpriteRenderer:

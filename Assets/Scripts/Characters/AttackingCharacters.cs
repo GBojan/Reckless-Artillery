@@ -17,7 +17,7 @@ public class AttackingCharacters : MonoBehaviour {
             arrowToShoot = projectile,
             HeightFrom = projectileHeightFrom,
             HeightTo = projectileHeightTo,
-            Speed = 150,
+            Speed = projectileSpeed,
             projectileFired = false
         };
 	}
@@ -52,10 +52,7 @@ public class AttackingCharacters : MonoBehaviour {
     IEnumerator ShootArrow(float seconds)
     {
         shootArrows.projectileFired = true;
-    
-        Debug.Log("Seconds to trigger: " + seconds);
         yield return new WaitForSeconds(seconds);
-        print(gameObject.name);
 
         //Spawning an arrow
         Vector3 newVector = new Vector3(this.transform.position.x, this.transform.position.y);

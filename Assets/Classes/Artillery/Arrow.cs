@@ -38,6 +38,7 @@ namespace Assets.Classes.Artillery
             Vector2 vector = objectRigidBody.velocity;
             float angle = Mathf.Atan2(vector.y, vector.x) * Mathf.Rad2Deg;
             objectRigidBody.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            objectRigidBody.gravityScale = 1;
 
             //Adding speed
             objectRigidBody.AddForce(Vector2.right * Speed);

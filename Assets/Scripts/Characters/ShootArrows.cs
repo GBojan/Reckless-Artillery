@@ -27,9 +27,8 @@ public class ShootArrows : MonoBehaviour {
             //Time between shooting arrows
             System.Random random = new System.Random();
             var seconds = random.Next(3, 5);
-            Debug.Log("Seconds to trigger: " + seconds);
+           
             yield return new WaitForSeconds(seconds);
-            print(gameObject.name);
 
             //Spawning an arrow
             Vector3 newVector = new Vector3(this.transform.position.x, this.transform.position.y);

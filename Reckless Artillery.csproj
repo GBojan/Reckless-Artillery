@@ -227,6 +227,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Classes\Artillery\Arrow.cs" />
+    <Compile Include="Assets\Scripts\Artillery\ProjectilesController.cs" />
     <Compile Include="Assets\Scripts\Characters\AttackingCharacters.cs" />
     <Compile Include="Assets\Scripts\Characters\DestroyObj.cs" />
     <Compile Include="Assets\Scripts\Characters\ShootArrows.cs" />
