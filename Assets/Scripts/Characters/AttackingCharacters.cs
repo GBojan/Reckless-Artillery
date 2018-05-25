@@ -14,7 +14,7 @@ public class AttackingCharacters : MonoBehaviour {
 
         shootArrows = new ShootArrows()
         {
-            arrowToShoot = projectile,
+            arrowToShoot = this.projectile,
             HeightFrom = projectileHeightFrom,
             HeightTo = projectileHeightTo,
             Speed = projectileSpeed,
@@ -56,7 +56,7 @@ public class AttackingCharacters : MonoBehaviour {
 
         //Spawning an arrow
         Vector3 newVector = new Vector3(this.transform.position.x, this.transform.position.y);
-        GameObject newArrow = Instantiate(shootArrows.arrowToShoot, newVector, this.transform.rotation);
+        GameObject newArrow = Instantiate(this.shootArrows.arrowToShoot, newVector, this.transform.rotation);
 
         var height = Random.Range(shootArrows.HeightFrom, shootArrows.HeightTo);
         var gmobject = new Arrow(2, shootArrows.Speed, height, 2, newArrow);
