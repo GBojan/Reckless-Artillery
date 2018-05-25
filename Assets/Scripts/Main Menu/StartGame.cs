@@ -16,6 +16,7 @@ public class StartGame : MonoBehaviour {
 	}
     private void OnMouseDown()
     {
+        Debug.Log("TEST");
         SceneManager.LoadScene("FirstScene");
     }
 }
